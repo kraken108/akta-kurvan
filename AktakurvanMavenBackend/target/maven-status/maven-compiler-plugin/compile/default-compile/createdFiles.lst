@@ -1,0 +1,8 @@
+BO\UserHandler.class
+Model\Friendship.class
+Model\User.class
+com\mycompany\aktakurvanmavenbackend\UserService.class
+com\mycompany\aktakurvanmavenbackend\VerticleStarter.class
+Model\User_.class
+ViewModel\VUser.class
+Model\Friendship_.class

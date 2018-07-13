@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Akta Kurvan Login</title>
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    </head>
+
+    <body>
+        <div>
+            <input id="txtEmail" type="email" placeholder="Email"/>
+            <br/>
+            <input id="txtPassword" type="password" placeholder="Password"/>
+            <br/>
+            <button id="btnLogin">Log in</button>
+
+        </div>
+        <script>
+            const config = {
+                apiKey: "AIzaSyCd-TDXZEj0_E8S-KGfDzonMLPZdgucsZ8",
+                authDomain: "mobilapp-67b55.firebaseapp.com",
+                databaseURL: "https://mobilapp-67b55.firebaseio.com",
+                projectId: "mobilapp-67b55",
+                storageBucket: "mobilapp-67b55.appspot.com",
+                messagingSenderId: "777985001299"
+            };
+            firebase.initializeApp(config);
+
+            const txtEmail = document.getElementById('txtEmail');
+            const txtPassword = document.getElementById('txtPassword');
+            const btnLogin = document.getElementById('btnLogin');
+
+            btnLogin.addEventListener('click', e => {
+                const email = txtEmail.value;
+                const pass = txtPassword.value;
+                const auth = firebase.auth();
+
+                const promise = auth.signInWithEmailAndPassword(email, pass);
+                promise.catch(e =>
+                    console.log(e.message)
+                );
+            });
+            
+            firebase.auth().onAuthStateChanged(firebaseUser => {
+               if(firebaseUser){
+                   console.log('success!');
+                   window.location.href = "loadlogin.xhtml?user=" + firebaseUser.email;
+                   
+               } else{
+                   console.log('fail');
+               }
+            });
+        </script>
+    </body>
+
+
+
+</html>

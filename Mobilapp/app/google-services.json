@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "777985001299",
+    "firebase_url": "https://mobilapp-67b55.firebaseio.com",
+    "project_id": "mobilapp-67b55",
+    "storage_bucket": "mobilapp-67b55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777985001299:android:0ed524cd45508e2f",
+        "android_client_info": {
+          "package_name": "com.example.p_jakdan_hjalmo.aktakurvan_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777985001299-0hiqag72ma791et8811kbks439ilicom.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.p_jakdan_hjalmo.aktakurvan_mobile",
+            "certificate_hash": "623364cb3f7d1fc25ad54dac13401f33be595134"
+          }
+        },
+        {
+          "client_id": "777985001299-mp2kqg09ilrdtm64okdkei2a8pvkftjb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH85XM3Ei6wv6g2kYCE7WzGcKjtcfQTMc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777985001299-mp2kqg09ilrdtm64okdkei2a8pvkftjb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
